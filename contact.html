@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社TECH</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+<!-- ヘッダー -->
+  <header class="header flex__item">
+    <div class="header__logo">
+      <a href="index.html" class="link">
+        <img src="img/logo.png" alt="logo">
+      </a>
+    </div>
+    <nav class="header__nav pc">
+      <ul class="header__nav-list flex__item--pc">
+        <li>
+          <a href="index.html" class="link">ホーム</a>
+        </li>
+        <li>
+          <a href="service.html" class="link">事業内容</a>
+        </li>
+        <li>
+          <a href="news.html" class="link">ニュース</a>
+        </li>
+        <li>
+          <a href="blog.html" class="link">社員ブログ</a>
+        </li>
+        <li>
+          <a href="company.html" class="link">会社概要</a>
+        </li>
+        <li>
+          <a href="recruit.html" class="link">採用情報</a>
+        </li>
+        <li>
+          <a href="contact.html" class="link">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+<!-- ドロワーメニュー -->
+    <nav class="nav sp" id="nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="blog.html">社員ブログ</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="menu sp" id="menu">
+      <span class="menu__line--top"></span>
+      <span class="menu__line--middle"></span>
+      <span class="menu__line--bottom"></span>
+    </div>
+  </header>
+
+<!-- ファーストビュー -->
+  <div class="firstview">
+    <div class="firstview__content container">
+      <h2 class="firstview__ttl">お問い合わせ</h2>
+    </div>
+  </div>
+
+<!-- お問い合わせ -->
+  <div class="contact">
+    <div class="container">
+        <form class="form" name="contact" method="POST">
+          <div class="form__item">
+            <p class="form__item-label">会社名</p>
+            <input type="text" name="company" class="form-item-input">
+          </div>
+          <div class="form__item">
+            <p class="form__item-label req">お名前</p>
+            <input type="text" name="name" class="form-item-input" required>
+          </div>
+          <div class="form__item">
+            <p class="form__item-label req">メールアドレス</p>
+            <input type="email" name="email" class="form-item-input" required>
+          </div>
+          <div class="form__item">
+            <p class="form__item-label req">お問い合わせ内容</p>
+            <textarea name="textarea" class="form-item-textarea" required></textarea>
+          </div>
+      <div class="button__container">
+        <input type="submit" value="お申し込み" class="btn link" onclick="return check();">
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer__container flex__item--pc">
+      <span>© 2020 TECH inc.</span>
+      <ul class="footer__nav flex__item--pc">
+        <li>
+          <a href="index.html" class="link">ホーム</a>
+        </li>
+        <li>
+          <a href="service.html" class="link">事業内容</a>
+        </li>
+        <li>
+          <a href="news.html" class="link">ニュース</a>
+        </li>
+        <li>
+          <a href="blog.html" class="link">社員ブログ</a>
+        </li>
+        <li>
+          <a href="company.html" class="link">会社概要</a>
+        </li>
+        <li>
+          <a href="recruit.html" class="link">採用情報</a>
+        </li>
+        <li>
+          <a href="contact.html" class="link">お問い合わせ</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
